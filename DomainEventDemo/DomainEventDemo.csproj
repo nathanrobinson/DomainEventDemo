@@ -7,9 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentAssert" Version="1.0.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
-    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <PackageReference Include="Scrutor" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DomainEventDemo.Core\DomainEventDemo.Core.csproj" />
+    <ProjectReference Include="..\DomainEventDemo.DataAccess\DomainEventDemo.DataAccess.csproj" />
+    <ProjectReference Include="..\DomainEventDemo.Services\DomainEventDemo.Services.csproj" />
   </ItemGroup>
 
 </Project>
